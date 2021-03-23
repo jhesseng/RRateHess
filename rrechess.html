@@ -92,6 +92,16 @@ date_win_max += taxis_increment;
 g.updateOptions( { dateWindow : [date_win_min, date_win_max] } );
 
 };
+  /**
+ * Low pass filter.
+ * @param {!Array<number>|TypedArray} samples The samples.
+ * @param {number} cutoff The cutoff frequency.
+ * @param {number} sampleRate The sample rate.
+ * @param {number} numChannels The number of channels.
+ */
+function lowPassFilter(data, 1, 100, 1) {
+  return data
+}
 
 data.push([x, y]);
 
