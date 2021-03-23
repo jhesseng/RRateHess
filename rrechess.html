@@ -16,7 +16,7 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.js"></script>
   
-
+<script src="https://cdn.jsdelivr.net/npm/low-pass-filter"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.css" />
 
@@ -103,9 +103,9 @@ g.updateOptions( { dateWindow : [date_win_min, date_win_max] } );
  * @param {number} sampleRate The sample rate.
  * @param {number} numChannels The number of channels.
  */
-//function lowPassFilter(data, 1, 100, 1) {
- // return data
-//}
+function lowPassFilter(data, 1, 100, 1) {
+   return data
+}
 
 data.push([x, y]);
 
